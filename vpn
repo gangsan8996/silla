@@ -1,0 +1,10 @@
+sudo apt update
+sudo apt upgrade
+wget https://git.io/vpnsetup -O vpnsetup.sh
+nano -w vpnsetup.sh
+YOUR_IPSEC_PSK='PSK값'
+YOUR_USERNAME='이름'
+YOUR_PASSWORD='비밀번호'
+sudo sh vpnsetup.sh
+sudo service ipsec restart
+sudo service xl2tpd restart
